@@ -6,6 +6,7 @@ using namespace std;
 typedef long long ll;
 typedef unsigned long long ull;
 typedef pair<int, int> pii;
+const int INF=0x3f3f3f3f;
 const int N = 1e6 + 5;
 
 int n,m;
@@ -27,6 +28,8 @@ inline ll read(){//read和cin不能同时处理字符
 
 signed main() {
     //fastio;
+    //freopen("test.in","r",stdin);
+    //freopen("test.out","w",stdout);
     n=read();
     m=read();
 

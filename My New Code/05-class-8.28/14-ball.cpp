@@ -25,8 +25,8 @@ struct ball{
 }ba[N];
 
 bool cmp(ball t,ball p){
-    if(t.x!=p.x)return t.x>p.x;
-    else if(t.y!=p.y)return t.y>p.y;
+    if(t.y!=p.y)return t.y>p.y;
+    else if(t.x!=p.x)return t.x>p.x;
     else return t.z>p.z;
 }
 
