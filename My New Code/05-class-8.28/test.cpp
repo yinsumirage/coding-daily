@@ -18,15 +18,15 @@ inline ll read(){//read和cin不能同时处理字符
     return x*f;
 }
 int main(){
-    for(int i=1;i<=30;i++){
-        for(int j=1;j<=20;j++){
+    for(int i=0;i<20;i++){
+        for(int j=0;j<30;j++){
             a[i][j]=read();
         }
     }
     printf("wall: {\n");
-    for(int i=1;i<=30;i++){
-        for(int j=1;i<=20;j++){
-            if(a[i][j]!=0)printf("        [utils.asGridCoord(%d, %d)]: true,\n",i,j);
+    for(int i=0;i<20;i++){
+        for(int j=0;j<30;j++){
+            if(a[i][j]!=0)printf("        [utils.asGridCoord(%d, %d)]: true,\n",j,i);
         }
     }
     printf("      }\n");

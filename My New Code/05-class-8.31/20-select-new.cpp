@@ -8,6 +8,7 @@ int d=0,x=0,dn,xn,ds,xs;
 int D[N],X[N];
 char s[N];
 
+
 int main(){
     cin>>n;
     cin>>s;
