@@ -1,2 +1,10 @@
 # coding-daily
-all my code in vscode
+
+all my codes in vscode  
+just to record my growth  
+
+## homework  
+
+
+
+## training
