@@ -10,7 +10,6 @@ const int INF=0x3f3f3f3f;
 const int N = 1e6 + 5;
 
 int n,m;
-int ans=0x3f3f3f3f;
 
 inline ll read(){//read和cin不能同时处理字符
     ll x=0,f=1;
