@@ -2,7 +2,7 @@
 #include<ext/rope>
 using namespace __gnu_cxx;
 using namespace std;
-//define fastio ios::sync_with_stdio(false);cin.tie(0); cout.tie(0)
+//#define fastio ios::sync_with_stdio(false);cin.tie(0); cout.tie(0)
 typedef long long ll;
 typedef unsigned long long ull;
 typedef pair<int, int> pii;
