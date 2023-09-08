@@ -9,7 +9,7 @@ typedef pair<int, int> pii;
 const int INF=0x3f3f3f3f;
 const int N = 55;
 
-int g[1005];
+int g[1007];
 int n,m,sh,sl,t;
 char a[N][N];
 char mian[5];
@@ -36,8 +36,6 @@ struct node{
 
 queue<node> q;
 
-int vis[55][55][4];
-
 signed main() {
     //fastio;
     //freopen("test.in","r",stdin);
@@ -45,14 +43,15 @@ signed main() {
     n=read();m=read();
     for(int i=1;i<=n;i++){
         for(int j=1;j<=m;j++){
-            if((a[i][j]=getchar())=='*'){
+            cin>>a[i][j];
+            if(a[i][j]=='*'){
                 sh=i;sl=j;a[i][j]='.';
             }
         }
         getchar();
     }
     t=read();
-    for(int i=1;i<=t;i++){
+    for(int i=0;i<t;i++){
         scanf("%s",mian);
         switch (mian[0]){
         case 'N': g[i]=1;break;
@@ -61,20 +60,15 @@ signed main() {
         case 'E': g[i]=4;break;
         }
     }
-    q.push(node{sh,sl,1});
+    q.push(node{sh,sl,0});
     while(!q.empty()){
         node u=q.front();q.pop();
         int hh=u.h,ll=u.l,ff=g[u.f];
-        if(u.f==t+1){
-            a[hh][ll]='*';
-            continue;
-        }
+        if(u.f==t)a[hh][ll]='*';
         while(1){
             hh+=dh[ff];ll+=dl[ff];
             if(hh<1||hh>n||ll<1||ll>m||a[hh][ll]=='X')break;
-            if(vis[hh][ll][ff])continue;
             q.push(node{hh,ll,u.f+1});
-            vis[hh][ll][ff]=1;
         }
     }
     for(int i=1;i<=n;i++){

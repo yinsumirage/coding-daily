@@ -51,3 +51,10 @@ $f[v]=f[u]+size[1]-size[v]-size[v]$
 p1649 cin>>char确实应该可以忽略空格 ~~但是cin>> 后面getchar就铁报错，segmentation fault~~  
 好了证实我是sb了，我之前更新mingw64的时候，没更换vscode里面的libstdc++-6.dll  
 里面的函数与现在的编译有存放位置的冲突，判定为空指针了，报段错误给我  
+
+## 9.07 5/5 day3
+the third day
+今天最后一节程设课  
+写5题，dp背包写完了  
+学了优化了一维，看j维是从大到小还是从小到大更新  
+一般是让j从大到小反向更新  
