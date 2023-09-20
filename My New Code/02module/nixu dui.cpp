@@ -61,7 +61,7 @@ int main(){
     } 
     for(int i=1;i<=n;i++){ 
         add(lisan[i],1); 
-        ans+=i-sum(lisan[i]); 
+        ans+=i-sum(lisan[i]);
     } 
     printf("%lld\n",ans); 
     system("pause"); 
